@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+
+    <title>Hello World</title>
+</head>
+
+<body>
+    <main class="container mt-5">
+        <section id="task1" class="page">
+            <h2 class="text-center mb-4">Task 2</h2>
+            <p class="text-center mb-4">За допомогою prompt запитати як звуть користувача.
+                За допомогою alert вивести "Hello, John! How are you?",
+                де John це те, що ввів користувач</p>
+            <button id="task1Button" class="mt-3 btn btn-primary  d-block mx-auto">Запитати як Звуть</button>
+        </section>
+
+        <section id="task2" class="page">
+            <h2 class="text-center mb-4">Task 2</h2>
+            <p class="text-center mb-4">Створити скрипт для складання, віднімання,
+                множення та поділу двох чисел та виведення результатів</p>
+            <form id="task2Form" class="mb-4">
+                <div class="form-group">
+                    <label for="task2number1">Number 1:</label>
+                    <input type="number" id="task2number1" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="task2number2">Number 2:</label>
+                    <input type="number" id="task2number2" class="form-control">
+                </div>
+                <div class="text-center">
+                    <button id="addButton" class="mt-3 btn btn-primary">Складання</button>
+                    <button id="subtractButton" class="mt-3 btn btn-primary">Віднімання</button>
+                    <button id="multiplyButton" class="mt-3 btn btn-primary">Множення</button>
+                    <button id="divideButton" class="mt-3 btn btn-primary">Поділ</button>
+                </div>
+            </form>
+            <div class="text-center mt-4">
+                <h4 id="task2result" class="text-primary"></h4>
+            </div>
+        </section>
+        
+
+        <section id="task3" class="page">
+            <h2 class="text-center mb-4">Task 3</h2>
+            <p class="text-center mb-4">Створити скрипт, який отримує два значення і виводить true,
+            якщо значення рівні, false - якщо ні</p>
+
+                <form id="task3tForm" class="mb-4">
+                    <div class="row">
+                    <div class="form-group col-md-6 ">
+                        <label for="number1">Число  1:</label>
+                        <input type="number" id="number1" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <label for="number2">Число  2:</label>
+                        <input type="number" id="number2" class="form-control">
+                    </div>
+                </div>
+                    <button type="submit" class="mt-3 btn btn-primary  d-block mx-auto">Перевірити</button>
+                </form>
+                <div class="d-flex justify-content-center">
+                <div style="width: 196px; height: 200px; overflow: hidden;">
+                    <img id="resultImage" src="true-or-false-check.jpg" style="display: block; width: 392px; object-fit: none; object-position: -196px center;">
+                </div></div>
+            </section>
+        </section>
+
+        <section id="task4" class="page">
+            <h2 class="text-center mb-4">Task 4</h2>
+            <p class="text-center mb-4">Визначити середнє арифметичне трьох чисел</p>
+            <form id="task4Form" class="mb-4">
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label for="task4number1">Число 1:</label>
+                        <input type="number" id="task4number1" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="task4number2">Число 2:</label>
+                        <input type="number" id="task4number2" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="task4number3">Число 3:</label>
+                        <input type="number" id="task4number3" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="average">Середне арифметичне</label>
+                        <input type="number" id="average" class="form-control">
+                    </div>
+                </div>
+                <button type="submit" class="mt-3 btn btn-primary d-block mx-auto">Перевірити</button>
+            </form>
+            <div class="text-center mt-4">
+                <h4 id="result" class="text-primary"></h4>
+            </div>
+        </section>
+
+        <section id="task5" class="page">
+            <h2 class="text-center mb-4">Task 5</h2>
+            <p class="text-center mb-4">Розкласти по цифрах п'ятизначне число і вивести
+                у вихідному порядку через пробіл
+                (використовувати оператор “розподіл по модулю” (%))</p>
+            <form id="task5Form" class="mb-4">
+                <div class="form-group">
+                    <label for="task5number">Input a 5-digit number:</label>
+                    <input type="number" id="task5number" min="10000" max="99999" class="form-control">
+                </div>
+                <button type="submit" class="mt-3 btn btn-primary d-block mx-auto">Розкласти по цифрах</button>
+            </form>
+            <div class="text-center mt-4">
+                <h4 id="result5" class="text-primary"></h4>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <h5 class="text">Kostintyn Buriak</h5>
+            <p>Salesforce Developer</p>
+            <p>+380934739023 | buriak.kostiantyn@gmail.com</p>
+            <a href="https://t.me/kostia_b" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/kburiak/" target="_blank"><i
+                    class="fab fa-linkedin fa-2x ml-3"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
